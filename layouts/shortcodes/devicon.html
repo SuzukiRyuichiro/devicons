@@ -1,1 +1,4 @@
-<h1>Hello from devicon theme</h1>
+{{- with .Get "alias" -}}
+  {{- $class := printf "devicon-%v-plain" . -}}
+  <i class="{{ $class }}"></i>
+{{ end }}
