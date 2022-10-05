@@ -1,0 +1,12 @@
+{
+  "name": "devicons",
+  "version": "1.0.0",
+  "description": "Devicon shortcode for hugo websites",
+  "main": "index.js",
+  "repository": "https://github.com/SuzukiRyuichiro/devicons.git",
+  "author": "Ryuichiro Suzuki <dragon.aka.scooter@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "devicon": "^2.15.1"
+  }
+}
