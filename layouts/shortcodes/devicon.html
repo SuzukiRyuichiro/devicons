@@ -1,4 +1,7 @@
-{{- with .Get "alias" -}}
-  {{- $class := printf "devicon-%v-plain" . -}}
-  <i class="{{ $class }}"></i>
+{{ $alias := .Get "alias" }}
+{{ $colored := .Get "colored" }}
+{{ if eq $colored "true" }}
+<i class="devicon-{{ $alias }} colored"></i>
+{{ else }}
+<i class="devicon-{{ $alias }}"></i>
 {{ end }}
